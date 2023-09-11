@@ -7,6 +7,7 @@ public class playerScript : MonoBehaviour
     
     public int forçaPulo;
     Rigidbody2D rbPlayer;
+    public GameObject GameOver;
     
     // Start is called before the first frame update
     void Start()
@@ -25,5 +26,12 @@ public class playerScript : MonoBehaviour
             rbPlayer.AddForce(new Vector2(0, forçaPulo), ForceMode2D.Impulse);
             
         }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameOver.SetActive(true);
+        Time.timeScale = 0;
     }
 }

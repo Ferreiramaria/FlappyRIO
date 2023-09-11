@@ -54,17 +54,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1802392167973698512}
     m_Modifications:
+    - target: {fileID: 5075424861837726, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.60225
+      value: 0.7361302
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.60225
+      value: 0.8560381
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalScale.z
@@ -114,6 +118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poste (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2246347641062208724, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
 --- !u!4 &5096679918900530661 stripped
@@ -128,17 +136,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1802392167973698512}
     m_Modifications:
+    - target: {fileID: 5075424861837726, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.60225
+      value: 0.7361302
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.60225
+      value: 0.8560381
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalScale.z
@@ -146,11 +158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.078164
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3381
+      value: 4.58
       objectReference: {fileID: 0}
     - target: {fileID: 563011129106048319, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -187,6 +199,10 @@ PrefabInstance:
     - target: {fileID: 2246347641062208724, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
       propertyPath: m_Name
       value: Poste
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246347641062208724, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b05b8b574d89af49a5ad9d2d75efb11, type: 3}
