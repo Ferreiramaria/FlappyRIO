@@ -8,6 +8,9 @@ public class playerScript : MonoBehaviour
     public int forçaPulo;
     Rigidbody2D rbPlayer;
     public GameObject GameOver;
+    public Animator anim;
+    
+    
     
     // Start is called before the first frame update
     void Start()

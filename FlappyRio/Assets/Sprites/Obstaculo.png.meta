@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14bc8f73f13299542a537cf1eb4a7a76
+guid: 4592759518dace549908fcec7067c073
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obstaculo_0
+      name: Obstaculo 1_0
       rect:
         serializedVersion: 2
         x: 771
@@ -131,8 +155,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a0d6acb07d5fbf4d90fbdefa77e24c6
-      internalID: 1237095635
+      spriteID: cc4d43a6101e61c44afc3cfc3d47e167
+      internalID: -1513322070
       vertices: []
       indices: 
       edges: []
@@ -148,7 +172,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Obstaculo_0: 1237095635
+      Obstaculo 1_0: -1513322070
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a8e88bfda37d234a9ac2193fdf81083
+guid: 55483755a8df7d145a5dc79fbfd19b54
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -114,7 +114,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -141,43 +141,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Personagem_0
+      name: MOEDA2_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 610
-        width: 72
-        height: 96
-      alignment: 9
-      pivot: {x: 0.73760986, y: 0.2581469}
+        x: 866
+        y: 523
+        width: 144
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 547a25825798345468bf2d71a774b1b8
-      internalID: 1706076032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Personagem_1
-      rect:
-        serializedVersion: 2
-        x: 817
-        y: 598
-        width: 122
-        height: 90
-      alignment: 9
-      pivot: {x: 0.41986933, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c956fd4e5c79c454bbf9d4fdea12cb4b
-      internalID: -179831816
+      spriteID: 01657b6250ae96240838f985c295ab0e
+      internalID: -636572623
       vertices: []
       indices: 
       edges: []
@@ -193,8 +172,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Personagem_1: -179831816
-      Personagem_0: 1706076032
+      MOEDA2_0: -636572623
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
