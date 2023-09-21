@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public GameObject obstaculo;
     private float intervalo;
     public float intervaloParaAd;
+
+    public bool IsGameOver;
     
     // Start is called before the first frame update
     void Start()
@@ -25,4 +27,5 @@ public class GameManager : MonoBehaviour
         }
        
     }
+
 }
