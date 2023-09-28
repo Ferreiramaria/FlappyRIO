@@ -6,12 +6,12 @@ public class playerScript : MonoBehaviour
 {
     
     public int forçaPulo;
-    Rigidbody2D rbPlayer;
+    private Rigidbody2D rbPlayer;
     public GameObject GameOver;
     public Animator anim;
-
     public AudioSource playerAudio;
     public AudioClip somPulo;
+    public AudioClip moeda;
     public GameManager gM;
     
     // Start is called before the first frame update
@@ -21,6 +21,7 @@ public class playerScript : MonoBehaviour
         playerAudio = GetComponent<AudioSource>();
         rbPlayer = GetComponent<Rigidbody2D>();
         rbPlayer.AddForce(new Vector2(0, forçaPulo), ForceMode2D.Impulse);
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,17 +29,28 @@ public class playerScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && gM.IsGameOver == false)
         {
+            anim.SetBool("Pulou", true);
             rbPlayer.velocity = Vector2.zero;
             rbPlayer.AddForce(new Vector2(0, forçaPulo), ForceMode2D.Impulse);
 
             playerAudio.PlayOneShot(somPulo);
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameOver.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Moeda")
+        {
+            playerAudio.PlayOneShot(moeda);
+            gM.pontuacao++;
+            Debug.Log("Peguei uma moeda");
+            Destroy(collision.gameObject);
+        }
     }
 }

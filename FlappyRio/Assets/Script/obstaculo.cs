@@ -4,15 +4,15 @@ public class obstaculo : MonoBehaviour
 {
     public int mov;
     public float verticalSpeed = 0.5f;
-
-
-
-
+    public GameObject moeda1, moeda2, moeda3, moeda4;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        moeda1.transform.position = new Vector2(moeda1.transform.position.x, Random.Range(2, -2));
+        moeda2.transform.position = new Vector2(moeda2.transform.position.x, Random.Range(2, -2));
+        moeda3.transform.position = new Vector2(moeda3.transform.position.x, Random.Range(2, -2));
+        moeda4.transform.position = new Vector2(moeda4.transform.position.x, Random.Range(2, -2));
     }
 
     // Update is called once per frame
@@ -33,11 +33,9 @@ public class obstaculo : MonoBehaviour
             verticalSpeed = Mathf.Abs(verticalSpeed); // Inverte a direção vertical
         }
 
-        if (transform.position.x <= -5)
+        if (transform.position.x <= -10)
         {
             Destroy(gameObject);
         }
     }
-
-
 }
