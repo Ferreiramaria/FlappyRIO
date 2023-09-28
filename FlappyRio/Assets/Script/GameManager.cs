@@ -14,10 +14,14 @@ public class GameManager : MonoBehaviour
     public bool IsGameOver;
     public GameManager gM; 
 
+    public int limitDificulty;
+
     public int pontuacao;
     public TextMeshProUGUI pontuacaoTMPro;
-    
-    
+
+    public int mov;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,12 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         pontuacaoTMPro.text = pontuacao.ToString();
+
+        if(pontuacao >= limitDificulty)
+        {
+            mov += 1;
+            limitDificulty += 5;
+        }
 
         if (intervalo <= Time.time && IsGameOver == false) 
         {

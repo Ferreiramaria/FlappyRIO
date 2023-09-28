@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class obstaculo : MonoBehaviour
 {
-    public int mov;
+    
     public float verticalSpeed = 0.5f;
     public GameObject moeda1, moeda2, moeda3, moeda4;
     private GameManager gm;
@@ -22,7 +22,7 @@ public class obstaculo : MonoBehaviour
     {
         if(gm.IsGameOver == false)
         {
-            transform.position = new Vector3(transform.position.x - mov * Time.deltaTime, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x - gm.mov * Time.deltaTime, transform.position.y, transform.position.z);
 
             float newY = transform.position.y + verticalSpeed * Time.deltaTime;
             transform.position = new Vector3(transform.position.x, newY, transform.position.z);
