@@ -40,7 +40,7 @@ public class playerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gM.IsGameOver = true;
+        gM.IsGameOver = true;  
         GameOver.SetActive(true);
         fxPlayer.Play();
     }
