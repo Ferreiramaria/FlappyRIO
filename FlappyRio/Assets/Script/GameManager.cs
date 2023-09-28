@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public float intervaloParaAd;
 
     public bool IsGameOver;
+    public GameManager gM; 
 
     public int pontuacao;
     public TextMeshProUGUI pontuacaoTMPro;
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         pontuacaoTMPro.text = pontuacao.ToString();
 
-        if (intervalo <= Time.time)
+        if (intervalo <= Time.time && IsGameOver == false) 
         {
             Instantiate(obstaculo, new Vector3(6, Random.Range(-1.31f, 2), 0), Quaternion.identity);
             intervalo = Time.time + intervaloParaAd;

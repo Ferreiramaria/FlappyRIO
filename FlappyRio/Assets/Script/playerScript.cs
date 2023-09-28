@@ -13,6 +13,7 @@ public class playerScript : MonoBehaviour
     public AudioClip somPulo;
     public AudioClip moeda;
     public GameManager gM;
+    public ParticleSystem fxPlayer;
     
     // Start is called before the first frame update
     void Start()
@@ -32,15 +33,16 @@ public class playerScript : MonoBehaviour
             anim.SetBool("Pulou", true);
             rbPlayer.velocity = Vector2.zero;
             rbPlayer.AddForce(new Vector2(0, forçaPulo), ForceMode2D.Impulse);
-
+            
             playerAudio.PlayOneShot(somPulo);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        gM.IsGameOver = true;
         GameOver.SetActive(true);
-        Time.timeScale = 0;
+        fxPlayer.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,7 +52,7 @@ public class playerScript : MonoBehaviour
             playerAudio.PlayOneShot(moeda);
             gM.pontuacao++;
             Debug.Log("Peguei uma moeda");
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject);            
         }
     }
 }
