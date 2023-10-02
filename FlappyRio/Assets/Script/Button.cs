@@ -36,7 +36,15 @@ public class Button : MonoBehaviour
         Application.Quit();
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(2);
+    }
 
+    public void Voltar()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
 
 
