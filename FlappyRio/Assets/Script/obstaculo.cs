@@ -6,6 +6,7 @@ public class obstaculo : MonoBehaviour
     public float verticalSpeed = 0.5f;
     public GameObject moeda1, moeda2, moeda3, moeda4;
     private GameManager gm;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -43,4 +44,6 @@ public class obstaculo : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+   
 }

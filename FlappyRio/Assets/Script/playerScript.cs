@@ -11,10 +11,13 @@ public class playerScript : MonoBehaviour
     public Animator anim;
     public AudioSource playerAudio;
     public AudioClip somPulo;
+
     public AudioClip moeda;
     public GameManager gM;
     public ParticleSystem fxPlayer;
     public AudioClip colisaoObstaculo;
+
+    public int somFoi;
     
     // Start is called before the first frame update
     void Start()
@@ -44,7 +47,12 @@ public class playerScript : MonoBehaviour
         gM.IsGameOver = true;  
         GameOver.SetActive(true);
         fxPlayer.Play();
-        playerAudio.PlayOneShot(colisaoObstaculo);
+        if(somFoi <= 1)
+        {
+            playerAudio.PlayOneShot(colisaoObstaculo);
+            somFoi++;
+        }
+        
 
     }
 
