@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         if(pontuacao >= limitDificulty)
         {
             mov += 1;
-            limitDificulty += 5;
+            limitDificulty += 30;
         }
 
         if (intervalo <= Time.time && IsGameOver == false) 
