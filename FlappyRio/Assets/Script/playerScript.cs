@@ -14,6 +14,7 @@ public class playerScript : MonoBehaviour
     public AudioClip moeda;
     public GameManager gM;
     public ParticleSystem fxPlayer;
+    public AudioClip colisaoObstaculo;
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,8 @@ public class playerScript : MonoBehaviour
         gM.IsGameOver = true;  
         GameOver.SetActive(true);
         fxPlayer.Play();
+        playerAudio.PlayOneShot(colisaoObstaculo);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -55,4 +58,8 @@ public class playerScript : MonoBehaviour
             Destroy(collision.gameObject);            
         }
     }
+
+   
+
+
 }

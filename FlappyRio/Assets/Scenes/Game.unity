@@ -2414,6 +2414,18 @@ PrefabInstance:
       propertyPath: fxPlayer
       value: 
       objectReference: {fileID: 1978604603}
+    - target: {fileID: 5355361349811301551, guid: 286ec47ffcd730d429f101700b103f1a, type: 3}
+      propertyPath: colisaoObstaculo
+      value: 
+      objectReference: {fileID: 8300000, guid: e2114e51a2083a3449cf0868244eeff4, type: 3}
+    - target: {fileID: 5355361349811301553, guid: 286ec47ffcd730d429f101700b103f1a, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355361349811301553, guid: 286ec47ffcd730d429f101700b103f1a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5732475588604537269, guid: 286ec47ffcd730d429f101700b103f1a, type: 3}
       propertyPath: m_Name
       value: Player

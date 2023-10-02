@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3472658070019072794}
   m_Layer: 0
   m_Name: obstaculo
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f304a30f36fe8b449a3f969653a4a75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mov: 4
   verticalSpeed: 1
   moeda1: {fileID: 4956035414830719185}
   moeda2: {fileID: 8480705574644253461}

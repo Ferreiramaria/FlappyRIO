@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obs
   - Moeda
+  - Obstaculo
   layers:
   - Default
   - TransparentFX
