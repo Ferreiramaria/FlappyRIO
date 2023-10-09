@@ -51,9 +51,7 @@ public class playerScript : MonoBehaviour
         {
             playerAudio.PlayOneShot(colisaoObstaculo);
             somFoi++;
-        }
-        
-
+        }        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,8 +64,4 @@ public class playerScript : MonoBehaviour
             Destroy(collision.gameObject);            
         }
     }
-
-   
-
-
 }

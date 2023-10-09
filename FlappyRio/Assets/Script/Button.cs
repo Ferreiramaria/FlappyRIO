@@ -12,6 +12,14 @@ public class Button : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PauseGame();
+        }
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(1);
