@@ -39,7 +39,7 @@ public class obstaculo : MonoBehaviour
             }
         }        
 
-        if (transform.position.x <= -10)
+        if (transform.position.x <= -13.7f)
         {
             Destroy(gameObject);
         }
